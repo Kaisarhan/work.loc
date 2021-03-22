@@ -1,17 +1,17 @@
 <?php
     session_start();
     require_once '../config/db.php';
-    //require_once '../adrc/login.php';
 
-//$login = "admin";
-//$password = "123123123";
-$login = $_POST["login"];
-$password = $_POST["password"];
-$spassword = $_SESSION['password'];
-
-if ($_SESSION["login"] == $login && $_SESSION["password"] == $password){
+    //если $_SESSION["login"] ровняется не NULL и $_SESSION["password"] ровняется не NULL тогда переходим в contant.php
+if ($_SESSION["login"] == !null && $_SESSION["password"] == !null){
     header('Location: /admin/contant.php');
 }
+
+/*if ($_SESSION["login"] == $login && $_SESSION["password"] == $password){
+    header('Location: /admin/contant.php');
+} else{
+    echo var_dump($_SESSION);
+}       //не забыть разкомментировать*/
 
 ?>
 <!--header-->
@@ -36,7 +36,7 @@ require '../tpl/header.php'
                     <label for="floatingPassword">Password</label>
                 </div>
                 <div class="btnLog">
-                    <button type="submit" class="btn btn-primary">Назад</button>
+                    <button type="submit" class="btn btn-primary">Главная</button>
                     <button type="submit" class="btn btn-primary">Войти</button>
                 </div>
             </div>
@@ -50,13 +50,6 @@ require '../tpl/header.php'
             </div>
         </div>
     </div>
-    <pre>
-    <?php
-    echo  $password;
-    echo $login;
-    echo $spassword;
-    ?>
-        </pre>
 </form>
 
 
