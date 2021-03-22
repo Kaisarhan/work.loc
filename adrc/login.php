@@ -10,13 +10,12 @@ $check_user = mysqli_query($connect, "SELECT * FROM `users` WHERE `login` = '$lo
 //echo mysqli_num_rows($check_user); //вывод результат совподающих user и password
 
 if (mysqli_num_rows($check_user)>0) {
-    session_start();
     $_SESSION["login"] = $_POST["login"];
     $_SESSION["password"] = $_POST["password"];
     header('location:../admin/contant.php');
 
 } else {
-    $_SESSION['message'] = 'Не правильный логин или пароль';
+    $_SESSION['msg'] = 'Не правильный логин или пароль';
     header('location: ../admin');
 }
 

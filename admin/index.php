@@ -1,11 +1,13 @@
 <?php
     session_start();
     require_once '../config/db.php';
+    //require_once '../adrc/login.php';
 
 //$login = "admin";
 //$password = "123123123";
 $login = $_POST["login"];
 $password = $_POST["password"];
+$spassword = $_SESSION['password'];
 
 if ($_SESSION["login"] == $login && $_SESSION["password"] == $password){
     header('Location: /admin/contant.php');
@@ -38,8 +40,13 @@ require '../tpl/header.php'
                     <button type="submit" class="btn btn-primary">Войти</button>
                 </div>
             </div>
-            <div class="alert alert-warning" role="alert">
-                Это уведомление-предупреждение с <a href="#" class="alert-link">примером ссылки</a>.
+                    <?php
+
+                        if ($_SESSION['msg']) {
+                            echo '<div class="alert alert-warning msg" role="alert"> <p>'. $_SESSION['msg'] .'</p>';
+                        }
+                        unset($_SESSION['msg']);
+                    ?> <!--<a href="#" class="alert-link">примером ссылки</a>.-->
             </div>
         </div>
     </div>
@@ -47,6 +54,7 @@ require '../tpl/header.php'
     <?php
     echo  $password;
     echo $login;
+    echo $spassword;
     ?>
         </pre>
 </form>

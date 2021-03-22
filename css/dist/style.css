@@ -73,3 +73,10 @@ thead {
   display: flex;
   justify-content: space-around;
 }
+.ObjCentr .author .msg {
+  margin: 1.5rem;
+}
+.ObjCentr .author .msg p {
+  font-weight: bold;
+  color: black;
+}
