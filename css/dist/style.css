@@ -1,0 +1,75 @@
+.Title_name {
+  text-align: center;
+}
+
+.form_add_elemets {
+  margin-top: 1rem;
+}
+
+.form_buttons {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  border: solid black 1px;
+  border-radius: 1rem;
+}
+.form_buttons .add_del {
+  /* border: solid black 1px;
+  border-radius: 1rem; */
+  padding: 1rem;
+}
+.form_buttons .search {
+  display: flex;
+  /* border: solid black 1px;
+  border-radius: 1rem; */
+  padding: 1rem;
+}
+
+.border {
+  border-radius: 1rem;
+}
+
+.btnUpdate {
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.searchTitle {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+thead {
+  color: sandybrown;
+}
+
+.ObjCentr {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ObjCentr p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.ObjCentr .author {
+  text-align: center;
+  border: 1px black solid;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.ObjCentr .author .LogPass {
+  margin-top: 3rem;
+}
+.ObjCentr .author .LogPass .btnLog {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
