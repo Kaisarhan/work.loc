@@ -36,7 +36,7 @@ require '../tpl/header.php'
                     <label for="floatingPassword">Password</label>
                 </div>
                 <div class="btnLog">
-                    <button type="submit" class="btn btn-primary">Главная</button>
+                    <a class="btn btn-primary" href="/" role="button">Главная</a>
                     <button type="submit" class="btn btn-primary">Войти</button>
                 </div>
             </div>

@@ -138,7 +138,7 @@ require_once 'config/db.php';
                 <th scope="col">Серийный номер</th>
                 <th scope="col">Дополнительно</th>
                 <th scope="col">Комментарий</th>
-                <th scope="col">Удаление из журнала</th>
+                <!--<th scope="col">Удаление из журнала</th>-->
             </tr>
             </thead>
 
@@ -154,13 +154,7 @@ require_once 'config/db.php';
                     <td><?= $jurnalTable[2]?></td>
                     <td><?= $jurnalTable[3]?></td>
                     <td><?= $jurnalTable[4]?></td>
-                    <td><!--<button type="button" class="btn btn-success" id="myInput" data-bs-toggle="modal" data-bs-target="#myModalUpdate" data-bs-whatever="@mdo">Редактировать</button>-->
-
-                        <a href="update.php?id=<?= $jurnalTable[0] ?>">Редактировать</a>
-                        <a href="adrc/delete.php?id=<?= $jurnalTable[0] ?>">Удалить</a>
-
-
-                        <!--<a href="" data-bs-toggle="modal" data-bs-target="#myModalUpdate">Редактировать</a>--></td>
+                
                 </tr>
                 <?php
             }

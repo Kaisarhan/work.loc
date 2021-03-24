@@ -25,7 +25,7 @@ require 'tpl/panel.php'
 
 <!-- tabel -->
 <?php
-require 'tpl/table.php';
+require 'tpl/tableTest.php';
 ?>
 <!-- end table -->
 

@@ -108,8 +108,8 @@ mysqli_query($connect, "SELECT * FROM `jurnarelements` WHERE `faim` LIKE '%$sear
     <h1 class="Title_name">Журнал для ведения учета USB</h1>
     <div class="container form_buttons">
         <div class="add_del">
-            <button type="button" class="btn btn-success" id="myInput" data-bs-toggle="modal" data-bs-target="#myModal" data-bs-whatever="@mdo">Добавить запись</button>
             <button type="submit" onclick="window.location.href='/'" class="btn btn-success">Полный список</button>
+            <a class="btn btn-primary" href="/admin" role="button">Admin Panel</a>
         </div>
         <!--<form action="post" action="adrc/searchLogic.php" id="search">-->
         <div class="search">
@@ -145,7 +145,6 @@ mysqli_query($connect, "SELECT * FROM `jurnarelements` WHERE `faim` LIKE '%$sear
                 <th scope="col">Серийный номер</th>
                 <th scope="col">Дополнительно</th>
                 <th scope="col">Комментарий</th>
-                <th scope="col">Удаление из журнала</th>
             </tr>
             </thead>
 
@@ -161,12 +160,6 @@ mysqli_query($connect, "SELECT * FROM `jurnarelements` WHERE `faim` LIKE '%$sear
                     <td><?= $jurnalTable[2]?></td>
                     <td><?= $jurnalTable[3]?></td>
                     <td><?= $jurnalTable[4]?></td>
-                    <td><!--<button type="button" class="btn btn-success" id="myInput" data-bs-toggle="modal" data-bs-target="#myModalUpdate" data-bs-whatever="@mdo">Редактировать</button>-->
-
-                        <a href="../update.php?id=<?= $jurnalTable[0] ?>">Редактировать</a> / <a href="delete.php?id=<?= $jurnalTable[0] ?>">Удалить</a>
-
-
-                        <!--<a href="" data-bs-toggle="modal" data-bs-target="#myModalUpdate">Редактировать</a>--></td>
                 </tr>
                 <?php
             }
