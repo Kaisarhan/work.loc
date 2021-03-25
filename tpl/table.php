@@ -50,7 +50,7 @@
 
 
 
-
+            echo $totalEmployee; // Вывод количество записей в таблице
 
             // $jurnalTables = mysqli_query($connect, "SELECT * FROM `jurnarelements` LIMIT $Limit OFFSET $Offset");//подключения и выбор всей таблицы
             $jurnalTables = mysqli_query($connect, "SELECT * FROM `jurnarelements` ORDER BY `id` DESC LIMIT $startFrom, $showRecordPerPage");//подключения и выбор всей таблицы
