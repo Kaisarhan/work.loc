@@ -80,3 +80,8 @@ thead {
   font-weight: bold;
   color: black;
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
