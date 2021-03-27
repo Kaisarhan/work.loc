@@ -37,7 +37,7 @@
 <!-- end modal window add db -->
 
 <!-- modal window update db -->
-<form action="../adrc/update.php" method="post">
+<form action="adrc/update.php" method="post">
     <div class="modal fade" id="myModalUpdate" data-bs-backdrop="static" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">

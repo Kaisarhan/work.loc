@@ -36,7 +36,6 @@
             $previousPage = $currentPage - 1; //1-1=0
 
             //  echo $totalEmployee; // Вывод количество записей в таблице
-
             $jurnalTables = mysqli_query($connect, "SELECT * FROM `jurnarelements` ORDER BY `id` DESC LIMIT $startFrom, $showRecordPerPage");//подключения и выбор всей таблицы
             $jurnalTables = mysqli_fetch_all($jurnalTables); //вывод обьека в нормальном виде массива
             foreach ($jurnalTables as $jurnalTable ) {//используем цикл для вывода таблицы по нужным нам полям
@@ -48,8 +47,8 @@
                     <td><?= $jurnalTable[3]?></td>
                     <td><?= $jurnalTable[4]?></td>
                     <td>
-                        <a href="update.php?id=<?= $jurnalTable[0] ?>" class="btn btn-primary" role="button" title="Редактировать"><i class="bi bi-pencil-square"></i></a>
-                        <a href="adrc/delete.php?id=<?= $jurnalTable[0] ?>" class="btn btn-danger" role="button" title="Удалить из журнала"><i class="bi bi-trash"></i></a>
+                        <a href="update.php?id=<?= $jurnalTable[0] ?>" class="btn btn-primary" role="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Редактировать"><i class="bi bi-pencil-square"></i></a>
+                        <a href="adrc/delete.php?id=<?= $jurnalTable[0] ?>" class="btn btn-danger" role="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Удалить из журнала"><i class="bi bi-trash"></i></a>
                     </td>
                 </tr>
                 <?php
