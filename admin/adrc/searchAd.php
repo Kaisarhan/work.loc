@@ -26,7 +26,7 @@ require '../tpl/panelSearchAd.php'
 
 <!-- searchTableAd -->
 <?php
-require '../tpl/searchTableAd.php';
+require '../tpl/searchTableAd.php'
 ?>
 <!-- end searchTableAd -->
 
