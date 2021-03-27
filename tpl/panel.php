@@ -2,7 +2,7 @@
     <h1 class="Title_name">Журнал для ведения учета USB</h1>
     <div class="container form_buttons">
         <div class="add_del">
-            <a class="btn btn-primary" href="/admin" role="button">Admin Panel</a>
+            <a class="btn btn-primary" href="/admin" role="button" title="Админ панель"><i class="bi bi-emoji-laughing"></i></a>
         </div>
         <div class="search">
             <form class="d-flex" action="adrc/search.php" id="search">
