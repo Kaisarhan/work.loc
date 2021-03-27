@@ -111,7 +111,7 @@ require_once 'config/db.php';
                 <button type="submit" name="subBtn" class="btn btn-outline-success">Найти</button>-->
                 <form class="d-flex" method="get" action="adrc/searchLogic.php" id="search">
                     <input class="form-control me-2" type="search" name="search" placeholder="Пойск..." aria-label="Search">
-                    <button type="submit" class="btn btn-outline-success">Найти</button>
+                    <button type="submit" class="btn btn-outline-success">Найти123</button>
                 </form>
             </div>
        <!-- </form>-->

@@ -12,6 +12,9 @@
             </thead>
 
             <tbody>
+
+
+
             <?php
 
             if (isset($_GET['page'])) {
@@ -26,7 +29,7 @@
 
 
 
-            $showRecordPerPage = 10;
+            $showRecordPerPage = 20;
             $startFrom = ($currentPage * $showRecordPerPage) - $showRecordPerPage; // (1*5)-5=0
             //$totalEmpSQL = "SELECT * FROM jurnarelements"; //
             $jurnalTables = mysqli_query($connect, "SELECT * FROM `jurnarelements`");
@@ -50,7 +53,7 @@
 
 
 
-            echo $totalEmployee; // Вывод количество записей в таблице
+          //  echo $totalEmployee; // Вывод количество записей в таблице
 
             // $jurnalTables = mysqli_query($connect, "SELECT * FROM `jurnarelements` LIMIT $Limit OFFSET $Offset");//подключения и выбор всей таблицы
             $jurnalTables = mysqli_query($connect, "SELECT * FROM `jurnarelements` ORDER BY `id` DESC LIMIT $startFrom, $showRecordPerPage");//подключения и выбор всей таблицы
@@ -70,7 +73,7 @@
             </tbody>
         </table>
         <nav aria-label="Page navigation">
-            <ul class="pagination">
+            <ul class="pagination justify-content-center">
                 <?php if($currentPage != $firstPage) { ?>
                     <li class="page-item">
                         <a class="page-link" href="?page=<?php echo $firstPage ?>" tabindex="-1" aria-label="Previous">
@@ -94,3 +97,4 @@
         </nav>
     </div>
 </section>
+

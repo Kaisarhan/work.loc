@@ -23,11 +23,6 @@ if ($_SESSION["login"] == null || $_SESSION["password"] == null) {
 }*/
 
 ?>
-
-
-<a href="../adrc/logOut.php">Выход</a>
-
-
 <!--header-->
 <?php
 require 'tpl/header.php'

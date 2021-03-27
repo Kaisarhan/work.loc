@@ -1,6 +1,5 @@
 <?php
 require_once 'config/db.php';
-
 ?>
 
 <!--header-->
@@ -9,11 +8,6 @@ require 'tpl/header.php'
 ?>
 <!--end header-->
 
-<!--ModalWindow-->
-<?php
-require 'tpl/ModalWindow.php'
-?>
-<!--end ModalWindow-->
 
 <!--buttons add, edit, search-->
 <?php
