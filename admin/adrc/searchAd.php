@@ -1,5 +1,5 @@
 <?php
-require_once '../config/db.php';
+require_once '../../config/db.php';
 $search = $_GET['searchInput'];
 $faim = $_POST['faim'];
 $serial = $_POST['serial'];
@@ -9,24 +9,28 @@ $comment = $_POST['comment'];
 mysqli_query($connect, "SELECT * FROM `jurnarelements` WHERE `faim` LIKE '%$search%'");
 
 ?>
+
 <?php
-require '../tpl/searchHeader.php'
+require '../../tpl/searchHeader.php'
 ?>
 
-<!--buttons add, edit, search-->
 <?php
-require '../tpl/panelSearch.php'
+require '../../tpl/ModalWindow.php'
 ?>
-<!--end buttons add, edit, search-->
 
-<!-- searchTabel -->
+<!--panelSearchAd-->
 <?php
-require '../tpl/searchTable.php'
+require '../tpl/panelSearchAd.php'
 ?>
-<!-- end searchTabel -->
+<!--end panelSearchAd-->
+
+<!-- searchTableAd -->
+<?php
+require '../tpl/searchTableAd.php';
+?>
+<!-- end searchTableAd -->
 
 
 <?php
 require '../tpl/footer.php'
 ?>
-

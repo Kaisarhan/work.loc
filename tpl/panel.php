@@ -1,6 +1,3 @@
-<?php
-?>
-<!-- buttons add, edit, search -->
 <section class="form_add_elemets">
     <h1 class="Title_name">Журнал для ведения учета USB</h1>
     <div class="container form_buttons">
