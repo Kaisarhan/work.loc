@@ -9,6 +9,7 @@
                 <th scope="col">Серийный номер</th>
                 <th scope="col">Дополнительно</th>
                 <th scope="col">Комментарий</th>
+                <th scope="col">Редактировать</th>
             </tr>
             </thead>
 
@@ -24,6 +25,10 @@
                     <td><?= $jurnalTable[2]?></td>
                     <td><?= $jurnalTable[3]?></td>
                     <td><?= $jurnalTable[4]?></td>
+                    <td>
+                        <a href="../update.php?id=<?= $jurnalTable[0] ?>" class="btn btn-primary" role="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Редактировать"><i class="bi bi-pencil-square"></i></a>
+                        <a href="adrc/delete.php?id=<?= $jurnalTable[0] ?>" class="btn btn-danger" role="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Удалить из журнала"><i class="bi bi-trash"></i></a>
+                    </td>
                 </tr>
                 <?php
             }
