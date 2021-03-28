@@ -48,7 +48,7 @@
                     <td><?= $jurnalTable[4]?></td>
                     <td>
                         <a href="updateAd.php?id=<?= $jurnalTable[0] ?>" class="btn btn-primary" role="button" title="Редактировать"><i class="bi bi-pencil-square"></i></a>
-                        <a href="adrc/delete.php?id=<?= $jurnalTable[0] ?>" class="btn btn-danger" role="button" title="Удалить из журнала"><i class="bi bi-trash"></i></a>
+                        <a href="adrc/deleteAd.php?id=<?= $jurnalTable[0] ?>" class="btn btn-danger" role="button" title="Удалить из журнала"><i class="bi bi-trash"></i></a>
                     </td>
                 </tr>
                 <?php
