@@ -7,6 +7,6 @@ $password = $_POST['password'];
 $fio = $_POST['fio'];
 $status = $_POST['status'];
 
-mysqli_query($connect, "UPDATE `users` SET `login` = '$login', `password` = '$password', `fio` = '$fio', `comment` = '$status' WHERE `users`.`id` = '$id'");
+mysqli_query($connect, "UPDATE `users` SET `login` = '$login', `password` = '$password', `fio` = '$fio', `status` = '$status' WHERE `users`.`id` = '$id'");
 
 header('location: /admin/contantAd.php');

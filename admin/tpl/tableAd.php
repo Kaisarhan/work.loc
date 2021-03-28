@@ -7,7 +7,7 @@
             <tr>
                 <th scope="col">ID</th>
                 <th scope="col">Login</th>
-                <th scope="col">Pssword</th>
+                <th scope="col">Password</th>
                 <th scope="col">ФИО</th>
                 <th scope="col">Должность</th>
                 <th scope="col">Редактировать</th>
