@@ -22,7 +22,7 @@
                         <label for="floatingInput">Дополнительно</label>
                     </div>
                     <div class="form-floating">
-                        <textarea name="comment" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <textarea name="comment" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 80px"></textarea>
                         <label for="floatingTextarea2">Комментарий</label>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                         <label for="floatingInput">Дополнительно</label>
                     </div>
                     <div class="form-floating">
-                        <textarea name="comment" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"><?= $jurnalTable['comment'] ?></textarea>
+                        <textarea name="comment" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"><?= $jurnalTabl['comment'] ?></textarea>
                         <label for="floatingTextarea2">Комментарий</label>
                     </div>
                 </div>
@@ -101,7 +101,7 @@
                         <label for="floatingInput">ФИО</label>
                     </div>
                     <div class="form-floating">
-                        <textarea name="status" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <textarea name="status" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 80px"></textarea>
                         <label for="floatingTextarea2">Должность</label>
                     </div>
                 </div>
@@ -140,7 +140,7 @@
                         <label for="floatingInput">ФИО</label>
                     </div>
                     <div class="form-floating">
-                        <textarea name="status" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"><?= $jurnalTable['status'] ?></textarea>
+                        <textarea name="status" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"><?= $jurnalTabl['status'] ?></textarea>
                         <label for="floatingTextarea2">Должность</label>
                     </div>
                 </div>
