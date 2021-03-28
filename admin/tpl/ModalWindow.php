@@ -79,30 +79,30 @@
                                                                         <!--all for the Administrators-->
 
 <!-- modal window add db -->
-<form action="adrc/create.php" method="post">
-    <div class="modal fade" id="myModal" tabindex="-1">
+<form action="adrc/createAd.php" method="post">
+    <div class="modal fade" id="myModalAd" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Введите информацию по вашему оборудованию</h5>
+                    <h5 class="modal-title">Введите информацию по новому пользователю</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="form-floating mb-3">
-                        <input name="faim" type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" >
-                        <label for="floatingInputValue">Фамилия и Имя</label>
+                        <input name="login" type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" >
+                        <label for="floatingInputValue">Логин</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input name="serial" type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" >
-                        <label for="floatingInput">Серийный номер устройства</label>
+                        <input name="password" type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" >
+                        <label for="floatingInput">Пароль</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input  name="additionally" type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" >
-                        <label for="floatingInput">Дополнительно</label>
+                        <input  name="fio" type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com" >
+                        <label for="floatingInput">ФИО</label>
                     </div>
                     <div class="form-floating">
-                        <textarea name="comment" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                        <label for="floatingTextarea2">Комментарий</label>
+                        <textarea name="status" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Должность</label>
                     </div>
                 </div>
                 <div class="modal-footer">

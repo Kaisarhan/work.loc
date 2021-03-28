@@ -9,6 +9,7 @@
             <a class="btn btn-primary" href="/" role="button" title="Гостевая панель"><i class="bi bi-person-lines-fill"> guest</i></a>
             <a class="btn btn-primary" href="contantAd.php" role="button" title="Список Администраторов"><i class="bi bi-list-stars"> AD list</i></a>                       <!--Admins List-->
             <button type="button" class="btn btn-success" id="myInput" data-bs-toggle="modal" data-bs-target="#myModal" data-bs-whatever="@mdo" title="Добавить новую запись"><i class="bi bi-clipboard-plus"> add</i></button>
+            <button type="button" class="btn btn-success" id="myInput" data-bs-toggle="modal" data-bs-target="#myModalAd" data-bs-whatever="@mdo" title="Добавить новую запись"><i class="bi bi-clipboard-plus"> add user</i></button>
         </div>
         <div class="search">
             <form class="d-flex" action="adrc/searchAd.php" id="search">
